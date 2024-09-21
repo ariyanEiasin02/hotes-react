@@ -40,7 +40,7 @@ const Carousel = () => {
     { id: 3, title: 'Star Sukhumvit', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder3.jpg' },
     { id: 4, title: 'FabExpress Nest', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder4.jpg' },
     { id: 5, title: 'Norn Yaowarat Hotel', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder5.jpg' },
-    { id: 6, title: 'Piazza Castello', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder6.jpg' },
+    { id: 6, title: 'Piazza Castello', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters",  imageUrl: require('./src/assets/silder6.jpg') },
   ];
 
   return (
@@ -58,7 +58,7 @@ const Carousel = () => {
             <div key={item.id} className="p-4">
               <div className="bg-white shadow-lg rounded-lg">
                 <img
-                  src={`/assets/${item.imageUrl}`}
+                  src={item.imageUrl}
                   alt={item.title}
                   className="w-full h-64 object-cover"
                 />
