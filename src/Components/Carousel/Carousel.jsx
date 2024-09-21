@@ -40,7 +40,7 @@ const Carousel = () => {
     { id: 3, title: 'Star Sukhumvit', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder3.jpg' },
     { id: 4, title: 'FabExpress Nest', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder4.jpg' },
     { id: 5, title: 'Norn Yaowarat Hotel', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder5.jpg' },
-    { id: 6, title: 'Piazza Castello', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder6.jpg' },
+    { id: 6, title: 'Piazza Castello', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: '/assets/silder6.jpg' },
   ];
 
   return (
