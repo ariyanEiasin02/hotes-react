@@ -58,7 +58,7 @@ const Carousel = () => {
             <div key={item.id} className="p-4">
               <div className="bg-white shadow-lg rounded-lg">
                 <img
-                  src={item.imageUrl}
+                  src={`/assets/${item.imageUrl}`}
                   alt={item.title}
                   className="w-full h-64 object-cover"
                 />

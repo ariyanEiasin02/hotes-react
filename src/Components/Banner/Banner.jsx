@@ -99,7 +99,7 @@ const Banner = () => {
               </div>
             </div>
             <div className="w-[13%]">
-              <a className='rounded-md bg-teal-500 py-3 px-9 font-poppins font-medium text-white text-base' href="#">Book Now</a>
+              <a className='rounded-md bg-teal-500 py-3 px-8 font-poppins font-medium text-white text-base' href="#">Book Now</a>
             </div>
           </div>
         </div>
