@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar/Navbar"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Banner from "./Components/Banner/Banner"
+import Carousel from "./Components/Carousel/Carousel";
 function App() {
   
   return (
@@ -10,6 +11,7 @@ function App() {
     <Header/>
     <Navbar/>
     <Banner/>
+    <Carousel/>
    </>
   )
 }
