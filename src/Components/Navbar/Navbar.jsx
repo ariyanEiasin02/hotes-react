@@ -3,12 +3,12 @@ import { IoSearch } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import logo from "../../assets/logo.png"
 import Register from '../Register/Register';
-import { RiCloseLargeLine } from "react-icons/ri";
+import { RiCloseLargeLine } from 'react-icons/ri';
 const Navbar = () => {
     const [search, setSearch] = useState(false)
     const [login,setLogin] = useState(false)
 
-    const handleLogin = ()=>{
+    const handleLoginButton = ()=>{
         setLogin(!login)
     }
     const handleSearch = () => {
@@ -51,13 +51,18 @@ const Navbar = () => {
                             <i onClick={handleSearch}><IoSearch className='inline-block absolute top-2 right-2 text-[#333]' /></i>
                         </div>
                         <div className="ml-3 cursor-pointer">
-                            <i onClick={handleLogin}><FaUser className='inline-block' /></i>
-                            <span onClick={handleLogin} className='ml-[2px] font-poppins font-medium text-[#333] text-base'>Register
+                            <i onClick={handleLoginButton}><FaUser className='inline-block' /></i>
+                            <span onClick={handleLoginButton} className='ml-[3px] font-poppins font-medium text-[#333] text-base'>Register
                             </span>
+                            <div className="relative">
                             <div className={`fixed top-0 left-0 z-40 w-full ${login ? "block" : "hidden"}`}>
                                 <Register />
                             </div>
-                            <p onClick={handleLogin} className={`fixed top-[15%] right-[13%] z-40 ${login ? "block" : "hidden"} bg-red-500 py-4 px-4 rounded-md text-white`}><RiCloseLargeLine/></p>
+                            <div className="">
+                            <p onClick={handleLoginButton} className={`fixed top-2 right-2 z-40 bg-red-500 py-4 px-4 rounded-md text-white ${login ? "block" : "hidden"}`}><RiCloseLargeLine/></p>
+                            </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>

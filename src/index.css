@@ -15,4 +15,8 @@
   .slick-dots {
     bottom: -36px; /* Adjust dot positioning */
   }
+  .react-datepicker__input-container input {
+    padding: 12px !important; /* Force padding on input */
+  }
+  
   

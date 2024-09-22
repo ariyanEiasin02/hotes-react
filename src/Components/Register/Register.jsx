@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import loginImg from '../../assets/trending5.jpg'
+
 const Register = () => {
   const [isLogin, setIsLogin] = useState(true);
   const handleLogin = () => {
@@ -9,9 +10,10 @@ const Register = () => {
   const handleLogup = () => {
     setIsLogin(false)
   }
+
   return (
     <div className="bg-[rgb(51,51,51,0.6)] w-full h-screen relative">
-      <section className='w-[1000px] absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 mx-auto bg-white py-8 px-6'>
+      <section className='w-[1000px] absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 mx-auto rounded-lg bg-white py-8 px-6'>
       <div className="flex py-4 px-4 gap-x-6">
         <div className="w-[45%]">
           <div onClick={handleLogin} className={`bg-[#029E9D] hover:bg-[#029E9D] ${isLogin ? "bg-[#029E9D]" : "bg-transparent border-2"} py-3 rounded-xl text-center`}>

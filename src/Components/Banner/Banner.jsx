@@ -7,19 +7,19 @@ import "react-datepicker/dist/react-datepicker.css";
 const Banner = () => {
   const [show, setShow] = useState(false)
   const [button, setButton] = useState(false)
-  const [count,setCount] = useState(1)
-  const [count2,setCount2] = useState(0)
-  const [count3,setCount3] = useState(1)
+  const [count, setCount] = useState(1)
+  const [count2, setCount2] = useState(0)
+  const [count3, setCount3] = useState(1)
   const [buttonlast, setButtonlast] = useState(false)
   const [dateRange, setDateRange] = useState([null, null]);
   const [startDate, endDate] = dateRange;
   const handleShow = () => {
     setShow(!show)
   }
-  const handleButton = () =>{
+  const handleButton = () => {
     setButton(!button)
   }
-  const handleButtonLast = () =>{
+  const handleButtonLast = () => {
     setButtonlast(!buttonlast)
   }
   const increment = () => {
@@ -34,17 +34,17 @@ const Banner = () => {
 
   // Function to decrement the count
   const decrement = () => {
-    if(count > 1){
+    if (count > 1) {
       setCount(count - 1);
     }
   };
   const decrement2 = () => {
-    if(count2 > 0){
-      setCount3(count2 - 1);
+    if (count2 > 0) {
+      setCount2(count2 - 1);
     }
   };
   const decrement3 = () => {
-    if(count3 > 1){
+    if (count3 > 1) {
       setCount3(count3 - 1);
     }
   };
@@ -68,7 +68,7 @@ const Banner = () => {
           <div className="text-center">
             <h1 className="text-4xl font-poppins text-white uppercase font-bold mb-4">Welcome to Our Website</h1>
             <p className="text-lg mb-6 font-poppins font-light text-white w-[63%] mx-auto">Save 10% or more at participating properties. Just look for the blue Genius label.</p>
-            <button className="px-6 py-3 bg-indigo-600 rounded-lg text-white font-semibold hover:bg-indigo-700 transition duration-300">
+            <button className="px-6 py-3 bg-indigo-600 rounded-lg text-white font-poppins font-semibold hover:bg-indigo-700 transition duration-300">
               Sign in or register
             </button>
           </div>
@@ -84,9 +84,11 @@ const Banner = () => {
               </div>
               <div className="w-[29%] relative">
 
-                <div className={`z-20 absolute -bottom-5 left-10 outline-none`}>
+                <div className={`w-full outline-none`}>
                   <DatePicker
-                    showIcon
+                    className="w-full p-2 border border-gray-300 rounded-lg outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
+                    wrapperClassName="w-full"
+                    placeholderText="Select a date"
                     selectsRange={true}
                     startDate={startDate}
                     endDate={endDate}
@@ -109,7 +111,7 @@ const Banner = () => {
                       <div className="border">
                         <button onClick={decrement} className='text-2xl px-3 py-2'>-</button>
                         <span className='mx-4'>{count}</span>
-                        <button  onClick={increment} className='text-2xl px-3 py-2'>+</button>
+                        <button onClick={increment} className='text-2xl px-3 py-2'>+</button>
                       </div>
                     </div>
                     <div className="mt-4 flex items-center justify-between">
@@ -134,25 +136,25 @@ const Banner = () => {
                     </div>
                   </div>
                   <div onClick={handleButton} className="flex justify-between items-center mt-4">
-                        <div className="">
-                          <p className='font-poppins font-normal text-base text-[#333]'>Looking for a holiday home or apartment?</p>
-                        </div>
-                        <div className="relative">
-                            <div className={`w-10 rounded-full h-5 ${button ? "bg-[#0057B8]" : "bg-[#868686]"}`}></div>
-                            <div className={`w-5 rounded-full h-5 bg-white absolute top-[0px] ${button ? "right-[1px]" : "left-[1px]"} duration-500`}></div>
-                         </div>
+                    <div className="">
+                      <p className='font-poppins font-normal text-base text-[#333]'>Looking for a holiday home or apartment?</p>
+                    </div>
+                    <div className="relative">
+                      <div className={`w-10 rounded-full h-5 ${button ? "bg-[#0057B8]" : "bg-[#868686]"}`}></div>
+                      <div className={`w-5 rounded-full h-5 bg-white absolute top-[0px] ${button ? "right-[1px]" : "left-[1px]"} duration-500`}></div>
+                    </div>
                   </div>
                   <div onClick={handleButtonLast} className="flex justify-between items-center mt-4">
-                        <div className="">
-                          <p className='font-poppins font-normal text-base text-[#333]'>Travelling with pets?</p>
-                        </div>
-                        <div className="relative">
-                            <div className={`w-10 rounded-full h-5 ${buttonlast ? "bg-[#0057B8]" : "bg-[#868686]"}`}></div>
-                            <div className={`w-5 rounded-full h-5 bg-white absolute top-[0px] ${buttonlast ? "right-[1px]" : "left-[1px]"} duration-500`}></div>
-                         </div>
+                    <div className="">
+                      <p className='font-poppins font-normal text-base text-[#333]'>Travelling with pets?</p>
+                    </div>
+                    <div className="relative">
+                      <div className={`w-10 rounded-full h-5 ${buttonlast ? "bg-[#0057B8]" : "bg-[#868686]"}`}></div>
+                      <div className={`w-5 rounded-full h-5 bg-white absolute top-[0px] ${buttonlast ? "right-[1px]" : "left-[1px]"} duration-500`}></div>
+                    </div>
                   </div>
                   <div className="mt-6">
-                  <button className='w-full text-center border-[#0057B8] border-2 rounded-lg py-2 text-base font-poppins font-medium text-[#0057B8]'>Done</button>
+                    <button onClick={handleShow} className='w-full text-center border-[#0057B8] border-2 rounded-lg py-2 text-base font-poppins font-medium text-[#0057B8]'>Done</button>
                   </div>
                 </div>
               </div>
