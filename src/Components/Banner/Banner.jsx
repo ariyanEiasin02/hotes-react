@@ -40,7 +40,7 @@ const Banner = () => {
   };
   const decrement2 = () => {
     if(count2 > 0){
-      setCount3(count2 - 1);
+      setCount2(count2 - 1);
     }
   };
   const decrement3 = () => {
