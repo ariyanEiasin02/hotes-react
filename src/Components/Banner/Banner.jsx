@@ -39,11 +39,7 @@ const Banner = () => {
     }
   };
   const decrement2 = () => {
-<<<<<<< HEAD
     if (count2 > 0) {
-=======
-    if(count2 > 0){
->>>>>>> origin/main
       setCount2(count2 - 1);
     }
   };
