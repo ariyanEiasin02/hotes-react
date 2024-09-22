@@ -1,5 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
+import silder1 from '../../assets/silder1.jpg'
+import silder2 from '../../assets/silder2.jpg'
+import silder3 from '../../assets/silder3.jpg'
+import silder4 from '../../assets/silder4.jpg'
+import silder5 from '../../assets/silder5.jpg'
+import silder6 from '../../assets/silder6.jpg'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const Carousel = () => {
   const settings = {
@@ -34,17 +40,8 @@ const Carousel = () => {
     ],
   };
 
-  const items = [
-    { id: 1, title: 'Boss Suites Nana Hotel', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder1.jpg' },
-    { id: 2, title: 'FabExpress Scholer', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder2.jpg' },
-    { id: 3, title: 'Star Sukhumvit', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder3.jpg' },
-    { id: 4, title: 'FabExpress Nest', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder4.jpg' },
-    { id: 5, title: 'Norn Yaowarat Hotel', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: './src/assets/silder5.jpg' },
-    { id: 6, title: 'Piazza Castello', location: 'Santa Maria Novella, Italy, Florence', distance: "100 meters", imageUrl: '/assets/silder6.jpg' },
-  ];
-
   return (
-    <div className='bg-[#F1F1F1] py-6 relative'>
+    <div className='bg-[#F1F1F1] py-16 relative'>
       <div className="max-w-container mx-auto my-8">
         <div className="">
             <div className="">
@@ -53,30 +50,149 @@ const Carousel = () => {
               <p className='font-poppins font-light text-[#333] text-base py-2 w-[63%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
             </div>
         </div>
-        <Slider {...settings}>
-          {items.map((item) => (
-            <div key={item.id} className="p-4">
-              <div className="bg-white shadow-lg rounded-lg">
+        <div className="mt-6">
+        <Slider {...settings} className='bg-[#F1F1F1]'>
+          
+            <div className="w-[24%] p-2">
+            <div className="bg-white shadow-lg rounded-lg">
+            <div className="group relative overflow-hidden">
                 <img
-                  src={item.imageUrl}
-                  alt={item.title}
-                  className="w-full h-64 object-cover"
+                  src={silder1}
+                  alt="Piazza Castello"
+                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
                 />
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                </div>
                 <div className="p-4">
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center">
                     <div className="">
-                      <h3 className="text-lg font-semibold">{item.title}</h3>
-                      <p className='font-poppins font-light text-xs text-[#333]'>{item.location}</p>
+                      <h3 className="text-lg font-semibold">Boss Suites Nana Hotel</h3>
+                      <p className='font-poppins font-light text-xs text-[#333]'>Santa Maria Novella, Italy, Florence</p>
                     </div>
                     <div className="">
-                      <p className='font-poppins font-light text-xs text-[#333]'>{item.distance}</p>
+                      <p className='font-poppins font-light text-xs text-[#333]'>100 meters</p>
                     </div>
                   </div>
                 </div>
-              </div>
+                </div>
             </div>
-          ))}
+            <div className="w-[24%] p-2">
+            <div className="bg-white shadow-lg rounded-lg">
+            <div className="group relative overflow-hidden">
+                <img
+                  src={silder2}
+                  alt="Piazza Castello"
+                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
+                />
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                </div>
+                <div className="p-4">
+                  <div className="flex justify-between items-center">
+                    <div className="">
+                      <h3 className="text-lg font-semibold">FabExpress Scholer</h3>
+                      <p className='font-poppins font-light text-xs text-[#333]'>Santa Maria Novella, Italy, Florence</p>
+                    </div>
+                    <div className="">
+                      <p className='font-poppins font-light text-xs text-[#333]'>100 meters</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <div className="w-[24%] p-2">
+            <div className="bg-white shadow-lg rounded-lg">
+            <div className="group relative overflow-hidden">
+                <img
+                  src={silder3}
+                  alt="Piazza Castello"
+                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
+                />
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                </div>
+                <div className="p-4">
+                  <div className="flex justify-between items-center">
+                    <div className="">
+                      <h3 className="text-lg font-semibold">Star Sukhumvit</h3>
+                      <p className='font-poppins font-light text-xs text-[#333]'>Santa Maria Novella, Italy, Florence</p>
+                    </div>
+                    <div className="">
+                      <p className='font-poppins font-light text-xs text-[#333]'>100 meters</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <div className="w-[24%] p-2">
+            <div className="bg-white shadow-lg rounded-lg">
+            <div className="group relative overflow-hidden">
+                <img
+                  src={silder4}
+                  alt="Piazza Castello"
+                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
+                />
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                </div>
+                <div className="p-4">
+                  <div className="flex justify-between items-center">
+                    <div className="">
+                      <h3 className="text-lg font-semibold">FabExpress Nest</h3>
+                      <p className='font-poppins font-light text-xs text-[#333]'>Santa Maria Novella, Italy, Florence</p>
+                    </div>
+                    <div className="">
+                      <p className='font-poppins font-light text-xs text-[#333]'>100 meters</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <div className="w-[24%] p-2">
+            <div className="bg-white shadow-lg rounded-lg">
+            <div className="group relative overflow-hidden">
+                <img
+                  src={silder5}
+                  alt="Piazza Castello"
+                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
+                />
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                </div>
+                <div className="p-4">
+                  <div className="flex justify-between">
+                    <div className="">
+                      <h3 className="text-lg font-semibold">Norn Yaowarat Hotel</h3>
+                      <p className='font-poppins font-light text-xs text-[#333]'>Santa Maria Novella, Italy, Florence</p>
+                    </div>
+                    <div className="">
+                      <p className='font-poppins font-light text-xs text-[#333]'>100 meters</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <div className="w-[24%] p-2">
+            <div className="bg-white shadow-lg rounded-lg ">
+                <div className="group relative overflow-hidden">
+                <img
+                  src={silder6}
+                  alt="Piazza Castello"
+                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
+                />
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                </div>
+                <div className="p-4">
+                  <div className="flex justify-between">
+                    <div className="">
+                      <h3 className="text-lg font-semibold">Piazza Castello</h3>
+                      <p className='font-poppins font-light text-xs text-[#333]'>Santa Maria Novella, Italy, Florence</p>
+                    </div>
+                    <div className="">
+                      <p className='font-poppins font-light text-xs text-[#333]'>100 meters</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
         </Slider>
+          </div>
       </div>
     </div>
   );

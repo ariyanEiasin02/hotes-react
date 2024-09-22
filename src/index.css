@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom Slick Dots */
+.slick-dots li button:before {
+    font-size: 12px; /* Change dot size */
+    color: red; /* Default dot color */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #029E9D; /* Active dot color (Tailwind's red-400) */
+  }
+  
+  .slick-dots {
+    bottom: -36px; /* Adjust dot positioning */
+  }
+  
