@@ -50,7 +50,7 @@ const Banner = () => {
   };
   return (
     <div className='relative'>
-      <div className="relative w-full h-[600px]">
+      <div className="relative w-full h-[400px]">
         {/* Background Video */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
