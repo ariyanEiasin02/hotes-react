@@ -50,7 +50,7 @@ const Banner = () => {
   };
   return (
     <div className='relative'>
-      <div className="relative w-full h-[400px]">
+      <div className="relative w-full md:h-[375px] h-[400px]">
         {/* Background Video */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
@@ -64,25 +64,28 @@ const Banner = () => {
         </video>
 
         {/* Overlay Content */}
-        <div className="relative z-10 flex items-center justify-center h-full bg-black bg-opacity-50 text-white">
-          <div className="text-center">
-            <h1 className="text-4xl font-poppins text-white uppercase font-bold mb-4">Welcome to Our Website</h1>
-            <p className="text-lg mb-6 font-poppins font-light text-white w-[63%] mx-auto">Save 10% or more at participating properties. Just look for the blue Genius label.</p>
-            <button className="px-6 py-3 bg-indigo-600 rounded-lg text-white font-poppins font-semibold hover:bg-indigo-700 transition duration-300">
-              Sign in or register
-            </button>
+        <div className="relative z-10 h-full bg-black bg-opacity-50 text-white">
+          <div className="max-w-container mx-auto h-full">
+            <div className="md:flex items-center h-full">
+              <div className="px-4 md:px-0 py-10">
+                <p className="text-base md:text-lg font-poppins font-light text-white md:mb-3 mb-2">Best friends, great holidays</p>
+                <h1 className="md:text-3xl text-2xl md:leading-[45px] font-poppins text-white uppercase font-bold md:mb-3 mb-2">Make your group trip
+                  <br />dreams come true</h1>
+                <p className="text-base md:text-lg font-poppins font-light text-white">Break free from your routine and play a little</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="absolute -bottom-7 left-0 w-full z-30">
+      <div className="absolute md:-bottom-7 -bottom-10 left-0 w-full z-30 px-4 md:px-0">
         <div className="max-w-container mx-auto">
-          <div className="bg-[#FFB700] rounded-lg py-1">
-            <div className="flex justify-between gap-x-2 items-center px-6">
-              <div className="w-[29%] relative">
+          <div className="bg-[#FFB700] rounded-lg py-1 px-1">
+            <div className="md:flex justify-between gap-x-2 items-center">
+              <div className="md:w-[29%] relative mt-[2px] md:mt-0">
                 <input className='w-full border py-3 px-9 rounded-lg outline-none border-transparent ' type="text" placeholder='Where are you going?' />
                 <i><IoBedOutline className='inline-block absolute top-4 text-2xl left-2' /></i>
               </div>
-              <div className="w-[29%] relative">
+              <div className="md:w-[29%] relative mt-1 md:mt-0">
 
                 <div className={`w-full outline-none`}>
                   <DatePicker
@@ -99,10 +102,10 @@ const Banner = () => {
                   />
                 </div>
               </div>
-              <div className="w-[29%] relative">
+              <div className="md:w-[29%] relative mt-1 md:mt-0">
                 <input onClick={handleShow} className='w-full border py-3 px-9 rounded-lg outline-none border-transparent ' type="text" placeholder={`${count} adults · ${count2} children · ${count3} room`} />
                 <i onClick={handleShow}><FaRegUser className='inline-block absolute top-4 text-2xl left-2' /></i>
-                <div className={`absolute top-14 left-0 w-[350px] bg-white py-6 px-6 ${show ? "block" : "hidden"}`}>
+                <div className={`absolute top-14 left-0 md:w-[350px] bg-white py-6 px-6 ${show ? "block" : "hidden"}`}>
                   <div className="border-b-2 pb-6 border-[#333]">
                     <div className="flex items-center justify-between">
                       <div className="">
@@ -158,8 +161,8 @@ const Banner = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[13%]">
-                <a className='rounded-md bg-teal-500 py-3 px-8 font-poppins font-medium text-white text-base' href="#">Book Now</a>
+              <div className="md:w-[13%] mt-1 md:mt-0">
+                <button className='rounded-md bg-teal-500 w-full py-3 font-poppins font-medium text-white text-base'>Book Now</button>
               </div>
             </div>
           </div>

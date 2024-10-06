@@ -27,40 +27,40 @@ const Navbar = () => {
                     </div>
                     <div onClick={handleNavbarShow} className="md:hidden block">
                         {
-                            navbarShow ? <IoCloseOutline/> : <CiMenuFries />
+                            navbarShow ? <IoCloseOutline className='text-[#333] text-2xl font-poppins font-bold'/> : <CiMenuFries className='text-[#333] text-2xl font-poppins font-bold'/>
                         }
                     </div>
-                    <div className={`md:flex md:static absolute items-center justify-between gap-x-16 z-50 ${navbarShow ? "top-[60px] bg-red-500 w-full left-0 px-3 duration-300 py-6" : "top-[60px] -left-60 duration-300"}`}>
+                    <div className={`md:flex md:static absolute items-center justify-between gap-x-16 z-50 ${navbarShow ? "top-[60px] bg-rgbaColor w-full left-0 px-3 duration-300 py-3" : "top-[60px] -left-60 duration-300"}`}>
                         <div className="md:flex justify-center">
                         <ul className='md:flex gap-x-5'>
-                            <li>
-                                <a className='font-poppins font-normal text-base text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Home</a>
+                            <li className='mt-1 md:mt-0'>
+                                <a className='font-poppins font-normal text-base text-[#fff] md:text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Home</a>
                             </li>
-                            <li>
-                                <a className='font-poppins font-normal text-base text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Hotes</a>
+                            <li className='mt-1 md:mt-0'>
+                                <a className='font-poppins font-normal text-base text-[#fff] md:text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Hotes</a>
                             </li>
-                            <li>
-                                <a className='font-poppins font-normal text-base text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Special offer</a>
+                            <li className='mt-1 md:mt-0'>
+                                <a className='font-poppins font-normal text-base text-[#fff] md:text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Special offer</a>
                             </li>
-                            <li>
-                                <a className='font-poppins font-normal text-base text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Blog</a>
+                            <li className='mt-1 md:mt-0'>
+                                <a className='font-poppins font-normal text-base text-[#fff] md:text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Blog</a>
                             </li>
-                            <li>
-                                <a className='font-poppins font-normal text-base text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Services</a>
+                            <li className='mt-1 md:mt-0'>
+                                <a className='font-poppins font-normal text-base text-[#fff] md:text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Services</a>
                             </li>
-                            <li>
-                                <a className='font-poppins font-normal text-base text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Contact</a>
+                            <li className='mt-1 md:mt-0'>
+                                <a className='font-poppins font-normal text-base text-[#fff] md:text-[#333] uppercase hover:text-[#20A9A9] duration-300' href="#">Contact</a>
                             </li>
                         </ul>
-                        </div>
+                        </div> 
                         <div className="md:flex justify-end">
-                        <div className="relative rounded-full cursor-pointer">
-                            <input className={`border-2 py-1 rounded-lg px-4 text-[#333] text-base font-normal font-poppins w-full md:w-[220px] outline-none bg-transparent duration-300`} type="text" placeholder='Search...' />
-                            <i><IoSearch className='inline-block absolute top-3 right-2 text-[#333]' /></i>
+                        <div className="mt-1 md:mt-0 relative rounded-full cursor-pointer">
+                            <input className={`border-2 py-1 rounded-md px-4 text-[#333] text-base font-normal font-poppins w-full md:w-[220px] outline-none bg-transparent duration-300`} type="text" placeholder='Search...' />
+                            <i><IoSearch className='inline-block absolute top-3 right-2 text-[#fff] md:text-[#333]' /></i>
                         </div>
-                        <div className="ml-3 cursor-pointer">
-                            <i onClick={handleLoginButton}><FaUser className='inline-block' /></i>
-                            <span onClick={handleLoginButton} className='ml-[3px] font-poppins font-medium text-[#333] text-base'>Register
+                        <div className="md:ml-3 mt-1 md:mt-0 cursor-pointer">
+                            <i onClick={handleLoginButton}><FaUser className='inline-block text-[#fff] md:text-[#333]' /></i>
+                            <span onClick={handleLoginButton} className='ml-[3px] font-poppins font-medium text-[#fff] md:text-[#333] text-base'>Register
                             </span>
                             <div className="relative">
                             <div className={`fixed top-0 left-0 z-40 w-full ${login ? "block" : "hidden"}`}>

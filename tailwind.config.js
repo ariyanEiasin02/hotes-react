@@ -13,7 +13,8 @@ export default {
         "poppins" : "Poppins, sans-serif;"
       },
       backgroundImage:{
-        "overlay" : 'linear-gradient(to bottom, transparent, #000000);'
+        "overlay" : 'linear-gradient(to bottom, transparent, #000000);',
+        "rgbaColor" :'linear-gradient(to bottom, #000, #FF0000)'
       }
     },
   },
