@@ -30,7 +30,7 @@ const Navbar = () => {
                             navbarShow ? <IoCloseOutline className='text-[#333] text-2xl font-poppins font-bold'/> : <CiMenuFries className='text-[#333] text-2xl font-poppins font-bold'/>
                         }
                     </div>
-                    <div className={`md:flex md:static absolute items-center justify-between gap-x-16 z-50 ${navbarShow ? "top-[60px] bg-rgbaColor w-full left-0 px-3 duration-300 py-3" : "top-[60px] -left-80 duration-300"}`}>
+                    <div className={`md:flex md:static absolute items-center justify-between gap-x-16 z-50 ${navbarShow ? "top-[60px] bg-rgbaColor w-full left-0 px-3 duration-300 py-3" : "top-[60px] -left-96 duration-300"}`}>
                         <div className="md:flex justify-center">
                         <ul className='md:flex gap-x-5'>
                             <li className='mt-1 md:mt-0'>
