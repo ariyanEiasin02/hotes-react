@@ -6,7 +6,7 @@
 .ReactFlagsSelect-module_selectBtn__19wW7{
   color: #fff;
   padding: 1px 6px;
-  border: none;
+  border: none !important;
   font-size: 10px !important;
   font-family: "Playfair Display", serif;
   font-weight: 400;
