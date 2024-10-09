@@ -25,13 +25,13 @@ const Header = () => {
             <div className="max-w-container mx-auto">
                 <div className="md:flex justify-between items-center">
                     <div className="md:flex px-4 md:px-0">
-                        <div className="md:pr-4 md:border-r-[1px]">
-                            <FaPhoneAlt className='inline-block text-white' />
-                            <span className='ml-[2px] font-playfair font-medium text-white text-[10px]'>+88 01742264413</span>
+                        <div className="flex items-center">
+                            <p><FaPhoneAlt className='text-white text-[12px]' /></p>
+                            <p className='ml-[2px] font-playfair font-medium text-white text-[10px]'>+88 01742264413</p>
                         </div>
-                        <div className="md:px-4">
-                            <CgMail className='inline-block text-white text-xl' />
-                            <span className='ml-[2px] font-playfair font-medium text-white text-[10px]'>cityhotelsint@gmail.com</span>
+                        <div className="md:px-4 flex items-center">
+                            <p><CgMail className='text-white text-[12px]' /></p>
+                            <p className='ml-[2px] font-playfair font-medium text-white text-[10px]'>cityhotelsint@gmail.com</p>
                         </div>
                     </div>
 
