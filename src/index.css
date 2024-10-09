@@ -2,21 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.ReactFlagsSelect-module_selectBtn__19wW7{
+  color: #fff;
+  padding: 1px 6px;
+  border: none;
+  font-size: 10px !important;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+.ReactFlagsSelect-module_selectBtn__19wW7::after {
+  border-top: 5px solid #fff;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 0;
+}
 /* Custom Slick Dots */
 .slick-dots li button:before {
-    font-size: 12px; /* Change dot size */
-    color: red; /* Default dot color */
+    font-size: 12px; 
+    color: red; 
   }
   
   .slick-dots li.slick-active button:before {
-    color: #029E9D; /* Active dot color (Tailwind's red-400) */
+    color: #029E9D; 
   }
   
   .slick-dots {
-    bottom: -36px; /* Adjust dot positioning */
+    bottom: -36px;
   }
   .react-datepicker__input-container input {
-    padding: 12px !important; /* Force padding on input */
+    padding: 12px !important; 
   }
   
   

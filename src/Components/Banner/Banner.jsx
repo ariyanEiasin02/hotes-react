@@ -68,10 +68,10 @@ const Banner = () => {
           <div className="max-w-container mx-auto h-full">
             <div className="md:flex items-center h-full">
               <div className="px-4 md:px-0 py-10">
-                <p className="text-base md:text-lg font-poppins font-light text-white md:mb-3 mb-2">Best friends, great holidays</p>
-                <h1 className="md:text-3xl text-2xl md:leading-[45px] font-poppins text-white uppercase font-bold md:mb-3 mb-2">Make your group trip
+                <p className="text-base md:text-lg font-playfair font-light text-white md:mb-3 mb-2">Best friends, great holidays</p>
+                <h1 className="md:text-3xl text-2xl md:leading-[45px] font-playfair text-white uppercase font-extraboldbold md:mb-3 mb-2">Make your group trip
                   <br />dreams come true</h1>
-                <p className="text-base md:text-lg font-poppins font-light text-white">Break free from your routine and play a little</p>
+                <p className="text-base md:text-lg font-playfair font-light text-white">Break free from your routine and play a little</p>
               </div>
             </div>
           </div>

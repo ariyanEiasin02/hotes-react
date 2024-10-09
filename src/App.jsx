@@ -6,6 +6,7 @@ import Banner from "./Components/Banner/Banner"
 import Carousel from "./Components/Carousel/Carousel";
 import Tours from "./Components/Tours/Tours";
 import Footer from "./Components/Footer/Footer";
+import PopularTour from "./Components/PopularTour/PopularTour";
 function App() {
   
   return (
@@ -14,6 +15,7 @@ function App() {
     <Navbar/>
     <Banner/>
     <Carousel/>
+    <PopularTour/>
     <Tours/>
     <Footer/>
    </>

@@ -41,7 +41,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className='bg-[#F1F1F1] py-16 relative'>
+    <div className='bg-[#F1F1F1] py-8 relative'>
       <div className="max-w-container mx-auto my-8">
         <div className="">
             <div className="">

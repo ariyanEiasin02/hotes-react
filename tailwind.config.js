@@ -10,7 +10,7 @@ export default {
         "container" : "1200px"
       },
       fontFamily:{
-        "poppins" : "Poppins, sans-serif;"
+        "playfair" : "Playfair Display, serif"
       },
       backgroundImage:{
         "overlay" : 'linear-gradient(to bottom, transparent, #000000);',
