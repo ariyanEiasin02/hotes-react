@@ -27,29 +27,29 @@ const Header = () => {
                     <div className="md:flex px-4 md:px-0">
                         <div className="flex items-center md:border-r-[1px] md:pr-4">
                             <p><FaPhoneAlt className='text-white text-[12px]' /></p>
-                            <p className='ml-[2px] font-playfair font-medium text-white text-[10px]'>+88 01742264413</p>
+                            <p className='ml-[2px] font-open-sans font-normal text-white text-[12px]'>+88 01742264413</p>
                         </div>
                         <div className="md:px-4 flex items-center">
                             <p><CgMail className='text-white text-[12px]' /></p>
-                            <p className='ml-[2px] font-playfair font-medium text-white text-[10px]'>cityhotelsint@gmail.com</p>
+                            <p className='ml-[2px] font-open-sans font-normal text-white text-[12px]'>cityhotelsint@gmail.com</p>
                         </div>
                     </div>
 
                     <div className="flex items-center gap-x-8">
                         <div className="flex items-center">
                             <div className="">
-                                <p className='ml-[2px] font-playfair font-medium text-white text-[10px]'>Follow Us :</p>
+                                <p className='ml-[2px] font-open-sans font-medium text-white text-[12px]'>Follow Us :</p>
                             </div>
                             <div className="">
                                 <ul className='flex'>
                                     <li className='px-4 border-r-[1px]'>
-                                        <a className='text-white text-[10px]' href="#"><FaFacebookF /></a>
+                                        <a className='text-white text-[12px]' href="#"><FaFacebookF /></a>
                                     </li>
                                     <li className='px-4 border-r-[1px]'>
-                                        <a className='text-white text-[10px]' href="#"><FaXTwitter /></a>
+                                        <a className='text-white text-[12px]' href="#"><FaXTwitter /></a>
                                     </li>
                                     <li className='px-4 border-r-[1px]'>
-                                        <a className='text-white text-[10px]' href="#"><FaInstagram /></a>
+                                        <a className='text-white text-[12px]' href="#"><FaInstagram /></a>
                                     </li>
                                     <li className=' pl-4'>
                                         <a className='text-white text-[12px]' href="#"><FaYoutube /></a>

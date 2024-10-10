@@ -10,7 +10,8 @@ export default {
         "container" : "1200px"
       },
       fontFamily:{
-        "playfair" : "Playfair Display, serif"
+        "playfair" : "Playfair Display, serif",
+        "open-sans" : "Open Sans, sans-serif"
       },
       backgroundImage:{
         "overlay" : 'linear-gradient(to bottom, transparent, #000000);',

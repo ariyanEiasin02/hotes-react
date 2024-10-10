@@ -44,24 +44,23 @@ const Carousel = () => {
     <div className='bg-[#F1F1F1] py-8 relative'>
       <div className="max-w-container mx-auto my-8">
         <div className="">
-            <div className="">
-              <span className='font-poppins font-medium text-xl text-[#FCC703] py-2'>Top Pick</span>
-              <h2 className='py-2 font-poppins font-bold text-5xl text-[#333]'>Best <span className='text-[#199E9D]'>Tour Packages</span></h2>
-              <p className='font-poppins font-light text-[#333] text-base py-2 w-[63%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
-            </div>
+          <div className="">
+            <span className='font-playfair font-medium text-xl text-[#FCC703] py-2'>Top Pick</span>
+            <h2 className='py-2 font-playfair font-bold text-5xl text-[#333]'>Best <span className='text-[#199E9D]'>Tour Packages</span></h2>
+            <p className='font-playfair font-light text-[#333] text-base py-2 w-[63%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+          </div>
         </div>
         <div className="mt-6">
-        <Slider {...settings} className='bg-[#F1F1F1]'>
-          
+          <Slider {...settings} className='bg-[#F1F1F1]'>
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg">
-            <div className="group relative overflow-hidden">
-                <img
-                  src={silder1}
-                  alt="Piazza Castello"
-                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
-                />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+              <div className="group bg-white relative shadow-lg rounded-lg after:content-[''] after:w-0 after:h-[3px] after:bg-[#199E9D] after:absolute after:bottom-0 after:left-0 after:duration-300 after:hover:w-full">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={silder1}
+                    alt="Piazza Castello"
+                    className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
+                  />
+                  <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center">
@@ -74,17 +73,17 @@ const Carousel = () => {
                     </div>
                   </div>
                 </div>
-                </div>
+              </div>
             </div>
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg">
-            <div className="group relative overflow-hidden">
-                <img
-                  src={silder2}
-                  alt="Piazza Castello"
-                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
-                />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+              <div className="group bg-white relative shadow-lg rounded-lg after:content-[''] after:w-0 after:h-[3px] after:bg-[#199E9D] after:absolute after:bottom-0 after:left-0 after:duration-300 after:hover:w-full">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={silder2}
+                    alt="Piazza Castello"
+                    className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
+                  />
+                  <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center">
@@ -97,17 +96,17 @@ const Carousel = () => {
                     </div>
                   </div>
                 </div>
-                </div>
+              </div>
             </div>
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg">
-            <div className="group relative overflow-hidden">
-                <img
-                  src={silder3}
-                  alt="Piazza Castello"
-                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
-                />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+              <div className="group bg-white relative shadow-lg rounded-lg after:content-[''] after:w-0 after:h-[3px] after:bg-[#199E9D] after:absolute after:bottom-0 after:left-0 after:duration-300 after:hover:w-full">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={silder3}
+                    alt="Piazza Castello"
+                    className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
+                  />
+                  <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center">
@@ -120,17 +119,17 @@ const Carousel = () => {
                     </div>
                   </div>
                 </div>
-                </div>
+              </div>
             </div>
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg">
-            <div className="group relative overflow-hidden">
-                <img
-                  src={silder4}
-                  alt="Piazza Castello"
-                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
-                />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+              <div className="group bg-white relative shadow-lg rounded-lg after:content-[''] after:w-0 after:h-[3px] after:bg-[#199E9D] after:absolute after:bottom-0 after:left-0 after:duration-300 after:hover:w-full">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={silder4}
+                    alt="Piazza Castello"
+                    className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
+                  />
+                  <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center">
@@ -143,17 +142,17 @@ const Carousel = () => {
                     </div>
                   </div>
                 </div>
-                </div>
+              </div>
             </div>
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg">
-            <div className="group relative overflow-hidden">
-                <img
-                  src={silder5}
-                  alt="Piazza Castello"
-                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
-                />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+              <div className="group bg-white relative shadow-lg rounded-lg after:content-[''] after:w-0 after:h-[3px] after:bg-[#199E9D] after:absolute after:bottom-0 after:left-0 after:duration-300 after:hover:w-full">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={silder5}
+                    alt="Piazza Castello"
+                    className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
+                  />
+                  <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between">
@@ -166,17 +165,17 @@ const Carousel = () => {
                     </div>
                   </div>
                 </div>
-                </div>
+              </div>
             </div>
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg ">
-                <div className="group relative overflow-hidden">
-                <img
-                  src={silder6}
-                  alt="Piazza Castello"
-                  className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
-                />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+              <div className="group bg-white relative shadow-lg rounded-lg after:content-[''] after:w-0 after:h-[3px] after:bg-[#199E9D] after:absolute after:bottom-0 after:left-0 after:duration-300 after:hover:w-full">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={silder6}
+                    alt="Piazza Castello"
+                    className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
+                  />
+                  <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between">
@@ -189,10 +188,10 @@ const Carousel = () => {
                     </div>
                   </div>
                 </div>
-                </div>
+              </div>
             </div>
-        </Slider>
-          </div>
+          </Slider>
+        </div>
       </div>
     </div>
   );
@@ -201,13 +200,13 @@ const Carousel = () => {
 
 const PreviousArrow = ({ onClick }) => {
   return (
-    <button onClick={onClick} className='absolute -top-28 right-20 py-4 px-4 rounded-md bg-white font-poppins font-bold text-2xl text-black'><IoIosArrowBack/></button>
+    <button onClick={onClick} className='absolute -top-28 right-20 py-4 px-4 rounded-md bg-white font-poppins font-bold text-2xl text-black'><IoIosArrowBack /></button>
   );
 };
 
-const NextArrow = ({onClick }) => {
+const NextArrow = ({ onClick }) => {
   return (
-    <button onClick={onClick} className='absolute -top-28 right-0 py-4 px-4 rounded-md bg-white font-poppins font-bold text-2xl text-black'><IoIosArrowForward/></button>
+    <button onClick={onClick} className='absolute -top-28 right-0 py-4 px-4 rounded-md bg-white font-poppins font-bold text-2xl text-black'><IoIosArrowForward /></button>
   );
 };
 export default Carousel;
