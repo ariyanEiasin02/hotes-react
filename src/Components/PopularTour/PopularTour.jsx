@@ -14,9 +14,9 @@ const PopularTour = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    prevArrow: <PreviousArrow />,  // Custom Previous Arrow
+    prevArrow: <PreviousArrow />,  
     nextArrow: <NextArrow />,
-    slidesToShow: 4, // Number of items visible in the slider at once
+    slidesToShow: 4, 
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -56,14 +56,14 @@ const PopularTour = () => {
         <Slider {...settings} className='bg-white'>
           
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg border border-[#6E7070]">
-            <div className="group relative overflow-hidden">
+            <div className="group bg-white shadow-lg rounded-lg border border-[#6E7070]">
+            <div className="relative overflow-hidden">
                 <img
                   src={popular1}
                   alt="Piazza Castello"
                   className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
                 />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="">
@@ -99,14 +99,14 @@ const PopularTour = () => {
                 </div>
             </div>
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg border border-[#6E7070]">
-            <div className="group relative overflow-hidden">
+            <div className="group bg-white shadow-lg rounded-lg border border-[#6E7070]">
+            <div className="relative overflow-hidden">
                 <img
                   src={popular2}
                   alt="Piazza Castello"
                   className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
                 />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="">
@@ -142,14 +142,14 @@ const PopularTour = () => {
                 </div>
             </div>
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg border border-[#6E7070]">
-            <div className="group relative overflow-hidden">
+            <div className="group bg-white shadow-lg rounded-lg border border-[#6E7070]">
+            <div className="relative overflow-hidden">
                 <img
                   src={popular3}
                   alt="Piazza Castello"
                   className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
                 />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="">
@@ -185,14 +185,14 @@ const PopularTour = () => {
                 </div>
             </div>
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg border border-[#6E7070]">
-            <div className="group relative overflow-hidden">
+            <div className="group bg-white shadow-lg rounded-lg border border-[#6E7070]">
+            <div className="relative overflow-hidden">
                 <img
                   src={popular4}
                   alt="Piazza Castello"
                   className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
                 />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="">
@@ -228,14 +228,14 @@ const PopularTour = () => {
                 </div>
             </div>
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg border border-[#6E7070]">
-            <div className="group relative overflow-hidden">
+            <div className="group bg-white shadow-lg rounded-lg border border-[#6E7070]">
+            <div className="relative overflow-hidden">
                 <img
                   src={popular5}
                   alt="Piazza Castello"
                   className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
                 />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="">
@@ -271,14 +271,14 @@ const PopularTour = () => {
                 </div>
             </div>
             <div className="w-[24%] p-2">
-            <div className="bg-white shadow-lg rounded-lg border border-[#6E7070]">
-                <div className="group relative overflow-hidden">
+            <div className="group bg-white shadow-lg rounded-lg border border-[#6E7070]">
+                <div className="relative overflow-hidden">
                 <img
                   src={popular6}
                   alt="Piazza Castello"
                   className="w-full h-64 object-cover duration-700 ease-in-out group-hover:scale-125"
                 />
-                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 rounded-xl group-hover:h-full duration-700"></div>
+                <div className="absolute bottom-0 left-0 h-0 w-full bg-overlay opacity-30 group-hover:h-full duration-700"></div>
                 </div>
                 <div className="p-4">
                   <div className="">

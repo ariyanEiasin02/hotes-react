@@ -30,22 +30,22 @@ const Navbar = () => {
                         <div className="md:flex justify-center">
                             <ul className='md:flex gap-x-6'>
                                 <li className='mt-1 md:mt-0'>
-                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Home</a>
+                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 tracking-[0.1rem] relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Home</a>
                                 </li>
                                 <li className='mt-1 md:mt-0'>
-                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Hotes</a>
+                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 tracking-[0.1rem] relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Hotes</a>
                                 </li>
                                 <li className='mt-1 md:mt-0'>
-                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Special offer</a>
+                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 tracking-[0.1rem] relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Special offer</a>
                                 </li>
                                 <li className='mt-1 md:mt-0'>
-                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Blog</a>
+                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 tracking-[0.1rem] relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Blog</a>
                                 </li>
                                 <li className='mt-1 md:mt-0'>
-                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Services</a>
+                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 tracking-[0.1rem] relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Services</a>
                                 </li>
                                 <li className='mt-1 md:mt-0'>
-                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Contact</a>
+                                    <a className='font-playfair font-semibold text-base text-[#fff] md:text-[#333] hover:text-[#20A9A9] duration-300 tracking-[0.1rem] relative after:content-[""] after:w-0 after:h-[2px] after:bg-[#20A9A9] after:absolute after:-bottom-[18px] after:left-0 after:hover:w-full after:duration-300' href="#">Contact</a>
                                 </li>
                             </ul>
                         </div>
