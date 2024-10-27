@@ -8,7 +8,7 @@ const Footer = () => {
     <div>
         <section className='py-8 bg-[#0B3E3F]'>
             <div className="max-w-container mx-auto">
-                <div className="flex pb-10 gap-x-6 justify-between">
+                <div className="md:flex pb-10 gap-x-6 justify-between px-4 md:px-0">
                     <div className="">
                         <h3 className='font-poppins font-bold text-xl txt-[#333]'>
                             <img className='w-24 h-16' src={footerLogo} alt="" />
@@ -37,9 +37,9 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="">
+                    <div className="mt-5 md:mt-0">
                         <h3 className='font-poppins font-bold text-xl text-[#fff]'>About</h3>
-                        <ul className='mt-6'>
+                        <ul className='mt-3 md:mt-6'>
                             <li className='mt-1'>
                                 <a className='font-poppins font-light text-sm text-[#fff] hover:underline' href="#">Home</a>
                             </li>
@@ -60,9 +60,9 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="">
+                    <div className="mt-5 md:mt-0">
                         <h3 className='font-poppins font-bold text-xl text-[#fff]'>Quick Link</h3>
-                        <ul className='mt-6'>
+                        <ul className='mt-3 md:mt-6'>
                             <li className='mt-1'>
                                 <a className='font-poppins font-light text-sm text-[#fff] hover:underline' href="#">Book a Room</a>
                             </li>
@@ -77,9 +77,9 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="">
+                    <div className="mt-5 md:mt-0">
                         <h3 className='font-poppins font-bold text-xl text-[#fff]'>Newsletter</h3>
-                        <div className="mt-6">
+                        <div className="mt-3 md:mt-6">
                             <p className='font-poppins font-light text-sm text-[#fff] w-[80%]'>Stay Informed through our newsletter & get offer any time!</p>
                             <div className="flex mt-2">
                                 <div className="">
