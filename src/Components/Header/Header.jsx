@@ -5,23 +5,9 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaPhoneAlt } from "react-icons/fa"
 import ReactFlagsSelect from "react-flags-select";
 const Header = () => {
     const [selected, setSelected] = useState("");
-    const [selectedLanguage, setSelectedLanguage] = useState('en');
-
-    const languages = [
-        { code: 'en', name: 'English' },
-        { code: 'es', name: 'Spanish' },
-        { code: 'fr', name: 'French' },
-        { code: 'de', name: 'German' },
-        { code: 'bn', name: 'Bangla' },
-    ];
-
-    const handleLanguageChange = (e) => {
-        setSelectedLanguage(e.target.value);
-        console.log(`Language changed to: ${e.target.value}`);
-    };
-
+    
     return (
-        <section className='bg-[#029E9D] md:block hidden'>
+        <section className='bg-[#0B3E3F] md:block hidden'>
             <div className="max-w-container mx-auto">
                 <div className="md:flex justify-between items-center">
                     <div className="md:flex px-4 md:px-0">
@@ -63,15 +49,6 @@ const Header = () => {
                                 onSelect={(code) => setSelected(code)}
                             />
                         </div>
-                        {/* <div className="">
-                        <select className='py-2 px-2 rounded-md' id="language" value={selectedLanguage} onChange={handleLanguageChange}>
-                            {languages.map((lang) => (
-                                <option className='font-playfair font-medium text-[12px]' key={lang.code} value={lang.code}>
-                                    {lang.name}
-                                </option>
-                            ))}
-                        </select>
-                    </div> */}
                     </div>
                 </div>
             </div>
