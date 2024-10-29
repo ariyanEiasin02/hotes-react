@@ -101,9 +101,15 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="text-center mt-5">
-                    <p className='font-poppins font-normal text-[#fff] text-base'>Hotes.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p>
-                    <p className='font-poppins font-normal text-[#fff] text-base mt-1'>Copyright © 2024 Hotes.com™. All rights reserved.</p>
+                <div className="flex justify-between mt-5">
+                    <div className="">
+                    <p className='font-poppins font-normal text-[#fff] text-base'>Copyright © 2024 Hotes.com™. All rights reserved.</p>
+                    </div>
+                    <div className="flex gap-x-8">
+                    <p className='font-poppins font-normal text-[#fff] text-base mt-1'>Terms & Conditions</p>
+                    <p className='font-poppins font-normal text-[#fff] text-base mt-1'>Privacy policy</p>
+                    <p className='font-poppins font-normal text-[#fff] text-base mt-1'>Made by Templately</p>
+                    </div>
                 </div>
             </div>
         </section>

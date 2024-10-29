@@ -6,8 +6,9 @@ import silder3 from '../../assets/silder3.jpg'
 import silder4 from '../../assets/silder4.jpg'
 import silder5 from '../../assets/silder5.jpg'
 import silder6 from '../../assets/silder6.jpg'
-import { IoIosArrowBack, IoIosArrowForward,IoIosStar, IoMdTime} from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward, IoIosStar, IoMdTime } from "react-icons/io";
 import { MdArrowForward } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 const Carousel = () => {
   const settings = {
     dots: true,
@@ -65,11 +66,11 @@ const Carousel = () => {
                   <div className="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 duration-300">
                     <div className="bg-[#029E9D] py-3 px-4">
                       <ul className='flex gap-x-2'>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
                       </ul>
                     </div>
                   </div>
@@ -88,14 +89,16 @@ const Carousel = () => {
                     <h2 className='mt-1 font-playfair font-bold text-2xl text-[#029E9D]'>$260.00<span className='text-base text-[#333] font-normal'> | Per person</span></h2>
                   </div>
                   <div className="mt-5 flex justify-between items-center">
-                        <div className="flex items-center">
-                            <i className='text-base text-[#333]'><IoMdTime/></i>
-                            <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
-                        </div>
-                        <div className="">
-                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
-                        </div>
+                    <div className="flex items-center">
+                      <i className='text-base text-[#333]'><IoMdTime /></i>
+                      <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
                     </div>
+                    <div className="">
+                      <Link to="/booknow">
+                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -111,11 +114,11 @@ const Carousel = () => {
                   <div className="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 duration-300">
                     <div className="bg-[#029E9D] py-3 px-4">
                       <ul className='flex gap-x-2'>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
                       </ul>
                     </div>
                   </div>
@@ -134,14 +137,16 @@ const Carousel = () => {
                     <h2 className='mt-1 font-playfair font-bold text-2xl text-[#029E9D]'>$260.00<span className='text-base text-[#333] font-normal'> | Per person</span></h2>
                   </div>
                   <div className="mt-5 flex justify-between items-center">
-                        <div className="flex items-center">
-                            <i className='text-base text-[#333]'><IoMdTime/></i>
-                            <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
-                        </div>
-                        <div className="">
-                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
-                        </div>
+                    <div className="flex items-center">
+                      <i className='text-base text-[#333]'><IoMdTime /></i>
+                      <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
                     </div>
+                    <div className="">
+                      <Link to="/booknow">
+                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -157,11 +162,11 @@ const Carousel = () => {
                   <div className="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 duration-300">
                     <div className="bg-[#029E9D] py-3 px-4">
                       <ul className='flex gap-x-2'>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
                       </ul>
                     </div>
                   </div>
@@ -180,14 +185,16 @@ const Carousel = () => {
                     <h2 className='mt-1 font-playfair font-bold text-2xl text-[#029E9D]'>$260.00<span className='text-base text-[#333] font-normal'> | Per person</span></h2>
                   </div>
                   <div className="mt-5 flex justify-between items-center">
-                        <div className="flex items-center">
-                            <i className='text-base text-[#333]'><IoMdTime/></i>
-                            <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
-                        </div>
-                        <div className="">
-                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
-                        </div>
+                    <div className="flex items-center">
+                      <i className='text-base text-[#333]'><IoMdTime /></i>
+                      <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
                     </div>
+                    <div className="">
+                      <Link to="/booknow">
+                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -203,11 +210,11 @@ const Carousel = () => {
                   <div className="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 duration-300">
                     <div className="bg-[#029E9D] py-3 px-4">
                       <ul className='flex gap-x-2'>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
                       </ul>
                     </div>
                   </div>
@@ -226,14 +233,16 @@ const Carousel = () => {
                     <h2 className='mt-1 font-playfair font-bold text-2xl text-[#029E9D]'>$260.00<span className='text-base text-[#333] font-normal'> | Per person</span></h2>
                   </div>
                   <div className="mt-5 flex justify-between items-center">
-                        <div className="flex items-center">
-                            <i className='text-base text-[#333]'><IoMdTime/></i>
-                            <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
-                        </div>
-                        <div className="">
-                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
-                        </div>
+                    <div className="flex items-center">
+                      <i className='text-base text-[#333]'><IoMdTime /></i>
+                      <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
                     </div>
+                    <div className="">
+                      <Link to="/booknow">
+                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -249,11 +258,11 @@ const Carousel = () => {
                   <div className="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 duration-300">
                     <div className="bg-[#029E9D] py-3 px-4">
                       <ul className='flex gap-x-2'>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
                       </ul>
                     </div>
                   </div>
@@ -272,14 +281,16 @@ const Carousel = () => {
                     <h2 className='mt-1 font-playfair font-bold text-2xl text-[#029E9D]'>$260.00<span className='text-base text-[#333] font-normal'> | Per person</span></h2>
                   </div>
                   <div className="mt-5 flex justify-between items-center">
-                        <div className="flex items-center">
-                            <i className='text-base text-[#333]'><IoMdTime/></i>
-                            <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
-                        </div>
-                        <div className="">
-                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
-                        </div>
+                    <div className="flex items-center">
+                      <i className='text-base text-[#333]'><IoMdTime /></i>
+                      <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
                     </div>
+                    <div className="">
+                      <Link to="/booknow">
+                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -295,11 +306,11 @@ const Carousel = () => {
                   <div className="absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 duration-300">
                     <div className="bg-[#029E9D] py-3 px-4">
                       <ul className='flex gap-x-2'>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
-                        <li><IoIosStar className='text-[#FFBC00]'/></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
+                        <li><IoIosStar className='text-[#FFBC00]' /></li>
                       </ul>
                     </div>
                   </div>
@@ -318,14 +329,16 @@ const Carousel = () => {
                     <h2 className='mt-1 font-playfair font-bold text-2xl text-[#029E9D]'>$260.00<span className='text-base text-[#333] font-normal'> | Per person</span></h2>
                   </div>
                   <div className="mt-5 flex justify-between items-center">
-                        <div className="flex items-center">
-                            <i className='text-base text-[#333]'><IoMdTime/></i>
-                            <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
-                        </div>
-                        <div className="">
-                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
-                        </div>
+                    <div className="flex items-center">
+                      <i className='text-base text-[#333]'><IoMdTime /></i>
+                      <span className='ml-1 font-playfair font-medium text-base text-[#333]'>7 Days</span>
                     </div>
+                    <div className="">
+                      <Link to="/booknow">
+                        <button className='rounded-full border border-[#FF833F] w-full py-2 px-7 font-poppins font-medium text-[#333] text-base'>Book Now <MdArrowForward className='inline-block' /></button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
