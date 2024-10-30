@@ -50,7 +50,7 @@ const CheckInOut = () => {
     };
   return (
     <div>
-        <div className="fixed top-0 left-0 w-full z-30 px-4 md:px-0">
+        <div className="w-full z-30 px-4 md:px-0">
         <div className="max-w-container mx-auto">
           <div className="bg-[#FFB700] rounded-lg py-1 px-1">
             <div className="md:flex justify-between gap-x-2 items-center">

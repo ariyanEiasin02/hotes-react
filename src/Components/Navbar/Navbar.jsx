@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from "../../assets/logo.png"
 import { CiMenuFries } from "react-icons/ci";
 import { IoCloseOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [navbarShow, setNavbarShow] = useState(false)
     const [login, setLogin] = useState(false)
@@ -17,9 +18,9 @@ const Navbar = () => {
             <div className="max-w-container mx-auto">
                 <div className="flex justify-between items-center">
                     <div className="">
-                        <a href="#">
+                        <Link to="/">
                             <img className='w-14 h-10' src={logo} alt="" />
-                        </a>
+                        </Link>
                     </div>
                     <div onClick={handleNavbarShow} className="md:hidden block">
                         {
