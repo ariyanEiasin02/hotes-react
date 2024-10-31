@@ -6,6 +6,17 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'fade-bg': 'fade-bg 5s ease-in-out infinite',
+      },
+      keyframes: {
+        'fade-bg': {
+          '0%': { opacity: '1' },
+          '45%': { opacity: '1' },
+          '55%': { opacity: '0' },
+          '100%': { opacity: '0' },
+        },
+      },
       maxWidth:{
         "container" : "1200px"
       },
@@ -19,7 +30,7 @@ export default {
       },
       letterSpacing:{
         "ex-tracking-widest" : "2rem"
-      }
+      },
     },
   },
   plugins: [],
