@@ -21,7 +21,7 @@ const BookCard = () => {
     { src: `${card1}` },
     { src: `${card2}` },
 ];
-  const imagm = [
+  const imagess = [
     { src: `${card1}` },
     { src: `${card2}` },
     { src: `${card3}` },
@@ -65,7 +65,7 @@ const BookCard = () => {
             <div className="w-[24%]">
               <div>
                 <div>
-                  {imag.map((img, index) => (
+                  {imagess.map((img, index) => (
                     <img
                       key={index}
                       src={img.src}
