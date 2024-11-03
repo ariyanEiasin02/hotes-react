@@ -65,7 +65,7 @@ const BookCard = () => {
             <div className="w-[24%]">
               <div>
                 <div>
-                  {imagess.map((img, index) => (
+                  {imag.map((img, index) => (
                     <img
                       key={index}
                       src={img.src}
@@ -77,7 +77,7 @@ const BookCard = () => {
                 </div>
                 {isOpen && (
                   <ImageViewer
-                    imgs={imagm}
+                    imgs={imagess}
                     currImg={currentImage}
                     isOpen={isOpen}
                     onClickNext={() => setCurrentImage((currentImage + 1) % images.length)}
@@ -100,7 +100,22 @@ const BookCard = () => {
 
             </div>
             <div className="w-[26%]">
-              <div className="bg-red-600 w-full h-96"></div>
+              <div className="bg-[#f0f0f0] w-full h-96">
+                <div className="p-4">
+                  <h3>Checking Details:</h3>
+                  <p>Check In:</p>
+                  <p>Check Out:</p>
+                  <p>#of Room:</p>
+                  <p>#of Nights:</p>
+                  <p>#Total Amount:</p>
+                  <p>Meal Plan:</p>
+                </div>
+                <div className="p-4">
+                  <h3>Hotel Conditions:</h3>
+                  <p>Checl-in-From 16:00</p>
+                  <p>Checl-out-Untill 12:00</p>
+                </div>
+              </div>
             </div>
           </div>
 
