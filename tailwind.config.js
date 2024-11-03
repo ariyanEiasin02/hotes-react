@@ -7,13 +7,17 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        fadeSlideUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
+        backgroundImages: {
+          '0%': { backgroundImage: 'url("./src/assets/popular1.jpg")' },
+          '20%': { backgroundImage: 'url("./src/assets/popular2.jpg")' },
+          '40%': { backgroundImage: 'url("./src/assets/popular3.jpg")' },
+          '60%': { backgroundImage: 'url("./src/assets/popular4.jpg")' },
+          '80%': { backgroundImage: 'url("./src/assets/popular5.jpg")' },
+          '100%': { backgroundImage: 'url("./src/assets/popular6.jpg")' },
         },
       },
       animation: {
-        fadeSlideUp: 'fadeSlideUp 1.5s ease-out forwards', // Duration and easing
+        backgroundImages: 'backgroundImages 30s infinite ease-in-out', // Adjust duration as needed
       },
       maxWidth:{
         "container" : "1200px"

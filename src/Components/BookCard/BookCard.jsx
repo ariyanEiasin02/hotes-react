@@ -1,64 +1,14 @@
 import React, { useEffect, useState } from 'react'
 
-import card1 from '../../assets/popular1.jpg'
-import card2 from '../../assets/popular2.jpg'
-import card3 from '../../assets/popular3.jpg'
-import card4 from '../../assets/popular4.jpg'
-import card5 from '../../assets/popular5.jpg'
-import card6 from '../../assets/popular6.jpg'
-const images = [
-  `${card1}`,
-  `${card2}`,
-  `${card3}`,
-  `${card4}`,
-  `${card5}`,
-  `${card6}`,
-];
 const BookCard = () => {
-//   const imag = [
-//     { src: `${card1}` },
-//     { src: `${card2}` },
-// ];
-//   const imagess = [
-//     { src: `${card1}` },
-//     { src: `${card2}` },
-//     { src: `${card3}` },
-//     { src: `${card4}` },
-//     { src: `${card5}` },
-// ];
-  // const [isOpen, setIsOpen] = useState(false);
-  const [currentImage, setCurrentImage] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-  // const openViewer = (index) => {
-  //   setCurrentImage(index);
-  //   setIsOpen(true);
-  // };
-
-  // const closeViewer = () => {
-  //   setIsOpen(false);
-  // };
   return (
     <div>
       <section className='py-8'>
         <div className="max-w-container mx-auto">
           <div className="flex h-96">
             <div className="w-[25%]">
-              <div className="relative w-full h-96 overflow-hidden">
-                {images.map((image, index) => (
-                  <div
-                    key={index}
-                    className={`absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ${index === currentImage ? 'opacity-100' : 'opacity-0'
-                      }`}
-                    style={{ backgroundImage: `url(${image})` }}
-                  />
-                ))}
-              </div>
+            <div className="w-full h-96 bg-cover bg-center animate-backgroundImages "></div>
             </div>
             <div className="w-[24%]">
               {/* <div>
