@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import ImageViewer from 'react-images-viewer';
 
 import card1 from '../../assets/popular1.jpg'
 import card2 from '../../assets/popular2.jpg'
@@ -7,7 +6,6 @@ import card3 from '../../assets/popular3.jpg'
 import card4 from '../../assets/popular4.jpg'
 import card5 from '../../assets/popular5.jpg'
 import card6 from '../../assets/popular6.jpg'
-import BookGallaery from '../BookGallaery/BookGallaery';
 const images = [
   `${card1}`,
   `${card2}`,

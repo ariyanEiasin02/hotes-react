@@ -6,16 +6,14 @@ export default {
   ],
   theme: {
     extend: {
-      animation: {
-        'fade-bg': 'fade-bg 5s ease-in-out infinite',
-      },
       keyframes: {
-        'fade-bg': {
-          '0%': { opacity: '1' },
-          '45%': { opacity: '1' },
-          '55%': { opacity: '0' },
-          '100%': { opacity: '0' },
+        fadeSlideUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+      },
+      animation: {
+        fadeSlideUp: 'fadeSlideUp 1.5s ease-out forwards', // Duration and easing
       },
       maxWidth:{
         "container" : "1200px"
