@@ -17,18 +17,18 @@ const images = [
   `${card6}`,
 ];
 const BookCard = () => {
-  const imag = [
-    { src: `${card1}` },
-    { src: `${card2}` },
-];
-  const imagess = [
-    { src: `${card1}` },
-    { src: `${card2}` },
-    { src: `${card3}` },
-    { src: `${card4}` },
-    { src: `${card5}` },
-];
-  const [isOpen, setIsOpen] = useState(false);
+//   const imag = [
+//     { src: `${card1}` },
+//     { src: `${card2}` },
+// ];
+//   const imagess = [
+//     { src: `${card1}` },
+//     { src: `${card2}` },
+//     { src: `${card3}` },
+//     { src: `${card4}` },
+//     { src: `${card5}` },
+// ];
+  // const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -37,14 +37,14 @@ const BookCard = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
-  const openViewer = (index) => {
-    setCurrentImage(index);
-    setIsOpen(true);
-  };
+  // const openViewer = (index) => {
+  //   setCurrentImage(index);
+  //   setIsOpen(true);
+  // };
 
-  const closeViewer = () => {
-    setIsOpen(false);
-  };
+  // const closeViewer = () => {
+  //   setIsOpen(false);
+  // };
   return (
     <div>
       <section className='py-8'>
@@ -63,7 +63,7 @@ const BookCard = () => {
               </div>
             </div>
             <div className="w-[24%]">
-              <div>
+              {/* <div>
                 <div>
                   {imag.map((img, index) => (
                     <img
@@ -85,7 +85,8 @@ const BookCard = () => {
                     onClose={closeViewer}
                   />
                 )}
-              </div>
+              </div> */}
+              <div className="w-full bg-red-600 h-full"></div>
             </div>
             <div className="w-[25%]">
               <div className="relative w-full h-96">
